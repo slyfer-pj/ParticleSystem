@@ -8,4 +8,3 @@ Q/E - Up/Down
 
 Editor instructions:
 After changing the properties in the editor, click on SAVE to see the changes reflected in the particles.
-Size and Rotation are just dummy fields right now.
