@@ -1,0 +1,11 @@
+<EmitterData>
+    <Base maxParticles="200000" emissionRate="90000" lifetime="2.00~2.00" speed="3.00~3.00" size="0.50~0.50" rotation="0.00~335.00" startColor="255,255,255,255" endColor="0,0,0,255" gravity="0"/>
+    <Emission shape="Cone" coneHalfAngle="60" sphereRadius="5"/>
+    <SizeOverLifetime>
+        <key value="0" time="0"/>
+        <key value="1" time="0.25137213"/>
+        <key value="0" time="0.50164652"/>
+        <key value="1" time="0.74643248"/>
+        <key value="0" time="1"/>
+    </SizeOverLifetime>
+</EmitterData>

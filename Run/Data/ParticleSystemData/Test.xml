@@ -1,0 +1,85 @@
+<ParticleSystem>
+    <EmitterData name="Default">
+        <Base order="0" offset="0.00,0.00,0.00" maxParticles="120000" lifetime="1.00~1.00" speed="5.00~20.00" size="10.00~10.00" rotation="-20.00~20.00" startColor="110,28,2,255" gravity="0" simspace="Local"/>
+        <Emission mode="Burst" emissionRate="15" numBurstParticles="0" burstInterval="5"/>
+        <Shape shape="Cone" coneHalfAngle="30" coneForward="0.00,0.00,1.00" sphereRadius="5" fromSurface="false" boxDimensions="5.00,5.00,2.00" boxForward="0.00,0.00,1.00"/>
+        <SizeOverLifetime>
+            <X modifier="1">
+                <key value="0.33426166" time="0"/>
+                <key value="0.33426183" time="0.20087816"/>
+                <key value="1" time="0.49066961"/>
+                <key value="1" time="1"/>
+            </X>
+            <Y modifier="1">
+                <key value="0.33147633" time="0"/>
+                <key value="0.32869083" time="0.20087816"/>
+                <key value="1" time="0.40175632"/>
+                <key value="1" time="1"/>
+            </Y>
+        </SizeOverLifetime>
+        <VelocityOverLifetime modifier="0">
+            <VelocityX>
+                <CurveOne>
+                    <key value="-1" time="0"/>
+                    <key value="-1" time="1"/>
+                </CurveOne>
+                <CurveTwo>
+                    <key value="1" time="0"/>
+                    <key value="1" time="1"/>
+                </CurveTwo>
+            </VelocityX>
+            <VelocityY>
+                <CurveOne>
+                    <key value="-1" time="0"/>
+                    <key value="-1" time="1"/>
+                </CurveOne>
+                <CurveTwo>
+                    <key value="1" time="0"/>
+                    <key value="1" time="1"/>
+                </CurveTwo>
+            </VelocityY>
+            <VelocityZ>
+                <key value="0.0026385188" time="0.0010976949"/>
+                <key value="0.0052770376" time="1"/>
+            </VelocityZ>
+            <Drag modifier="10">
+                <key value="0.010306358" time="0"/>
+                <key value="1" time="1"/>
+            </Drag>
+        </VelocityOverLifetime>
+        <OrbitalVelocityOverLifetime forward="0.00,0.00,1.00">
+            <Velocity modifier="0">
+                <CurveOne>
+                    <key value="-1" time="0"/>
+                    <key value="-1" time="1"/>
+                </CurveOne>
+                <CurveTwo>
+                    <key value="1" time="0"/>
+                    <key value="1" time="1"/>
+                </CurveTwo>
+            </Velocity>
+            <Radius modifier="0">
+                <key value="1" time="0"/>
+                <key value="1" time="1"/>
+            </Radius>
+        </OrbitalVelocityOverLifetime>
+        <RotationOverLifetime modifier="0">
+            <CurveOne>
+                <key value="-1" time="0"/>
+                <key value="-1" time="1"/>
+            </CurveOne>
+            <CurveTwo>
+                <key value="1" time="0"/>
+                <key value="1" time="1"/>
+            </CurveTwo>
+        </RotationOverLifetime>
+        <ColorOverLifetime>
+            <key value="255,255,255,255" time="0"/>
+            <key value="255,255,255,255" time="0.1"/>
+            <key value="255,255,255,255" time="0.89999998"/>
+            <key value="255,255,255,0" time="1"/>
+        </ColorOverLifetime>
+        <Physics/>
+        <Renderer mode="Billboard" texture="Data\Images\sprite_toonExplosion_edit.png" isSpriteSheet="true" dimensions="4,4" blend="Additive" sortParticles="true"/>
+    </EmitterData>
+</ParticleSystem>

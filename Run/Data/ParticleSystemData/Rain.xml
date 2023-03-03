@@ -1,0 +1,114 @@
+<ParticleSystem>
+  <EmitterData name="Rain">
+    <Base order="0" offset="0.00,0.00,0.00" maxParticles="1000" lifetime="1.00~1.30" speed="4.00~4.00" size="0.05~0.05" rotation="20.00~30.00" startColor="55,165,252,255" gravity="1"/>
+    <Emission mode="Constant" emissionRate="500" numBurstParticles="100" burstInterval="5"/>
+    <Shape shape="Box" coneHalfAngle="0" sphereRadius="0" boxDimensions="5.00,5.00,2.00" boxForward="0.00,0.00,-1.00"/>
+    <SizeOverLifetime>
+      <X modifier="0.5">
+        <key value="0.40000001" time="0"/>
+        <key value="1" time="1"/>
+      </X>
+      <Y modifier="6">
+        <key value="0.24802125" time="0"/>
+        <key value="0.99736136" time="0.50054884"/>
+        <key value="0.24274409" time="1"/>
+      </Y>
+    </SizeOverLifetime>
+    <VelocityOverLifetime modifier="2.5">
+      <VelocityX>
+        <key value="0" time="0"/>
+        <key value="0" time="1"/>
+      </VelocityX>
+      <VelocityY>
+        <key value="1" time="0"/>
+        <key value="1" time="0.10098793"/>
+        <key value="0" time="1"/>
+      </VelocityY>
+      <VelocityZ>
+        <key value="0" time="0"/>
+        <key value="0" time="1"/>
+      </VelocityZ>
+      <Drag modifier="0">
+        <key value="0" time="1"/>
+        <key value="0" time="0"/>
+      </Drag>
+    </VelocityOverLifetime>
+    <OrbitalVelocityOverLifetime forward="1.00,1.00,0.00">
+      <Velocity modifier="0">
+        <key value="1" time="0"/>
+        <key value="1" time="1"/>
+      </Velocity>
+      <Radius modifier="0">
+        <key value="1" time="0"/>
+        <key value="1" time="1"/>
+      </Radius>
+    </OrbitalVelocityOverLifetime>
+    <RotationOverLifetime modifier="0">
+      <key value="1" time="0"/>
+      <key value="1" time="1"/>
+    </RotationOverLifetime>
+    <ColorOverLifetime>
+      <key value="255,255,255,0" time="0"/>
+      <key value="255,255,255,200" time="0.2"/>
+      <key value="255,255,255,200" time="0.80000001"/>
+      <key value="255,255,255,0" time="1"/>
+    </ColorOverLifetime>
+    <Physics/>
+    <Renderer mode="Billboard" texture="Data/Images/RoundSoftParticle.png" isSpriteSheet="false" dimensions="3,3" blend="Additive" sortParticles="false"/>
+  </EmitterData>
+  <EmitterData name="Splash">
+    <Base order="1" offset="0.00,1.00,-11.0" maxParticles="100"  lifetime="1.00~1.30" speed="0.00~0.00" size="0.20~0.20" rotation="0.00~0.00" startColor="55,165,252,255" gravity="0"/>
+    <Emission mode="Constant" emissionRate="40" numBurstParticles="100" burstInterval="5"/>
+    <Shape shape="Box" coneHalfAngle="0" sphereRadius="0" boxDimensions="5.00,5.00,1.00" boxForward="0.00,0.00,1.00"/>
+    <SizeOverLifetime>
+      <X modifier="2">
+        <key value="0" time="0"/>
+        <key value="1" time="1"/>
+      </X>
+      <Y modifier="2">
+        <key value="0" time="0"/>
+        <key value="1" time="1"/>
+      </Y>
+    </SizeOverLifetime>
+    <VelocityOverLifetime modifier="1">
+      <VelocityX>
+        <key value="0" time="0"/>
+        <key value="0" time="0"/>
+      </VelocityX>
+      <VelocityY>
+        <key value="0" time="0"/>
+        <key value="0" time="0"/>
+      </VelocityY>
+      <VelocityZ>
+        <key value="0" time="0"/>
+        <key value="0" time="0"/>
+      </VelocityZ>
+      <Drag modifier="0">
+        <key value="0" time="1"/>
+        <key value="0" time="0"/>
+      </Drag>
+    </VelocityOverLifetime>
+    <OrbitalVelocityOverLifetime forward="1.00,1.00,0.00">
+      <Velocity modifier="0">
+        <key value="1" time="0"/>
+        <key value="1" time="1"/>
+      </Velocity>
+      <Radius modifier="0">
+        <key value="1" time="0"/>
+        <key value="1" time="1"/>
+      </Radius>
+    </OrbitalVelocityOverLifetime>
+    <RotationOverLifetime modifier="0">
+      <key value="1" time="0"/>
+      <key value="1" time="1"/>
+    </RotationOverLifetime>
+    <ColorOverLifetime>
+      <key value="255,255,255,0" time="0"/>
+      <key value="255,255,255,180" time="0.2"/>
+      <key value="255,255,255,180" time="0.80000001"/>
+      <key value="255,255,255,0" time="1"/>
+    </ColorOverLifetime>
+    <Physics/>
+    <Renderer mode="HorizontalBillboard" texture="Data\Images\SplashRing.png" isSpriteSheet="false" dimensions="1,1" blend="Alpha" sortParticles="false"/>
+  </EmitterData>
+</ParticleSystem>

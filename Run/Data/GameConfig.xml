@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameConfig
+    windowAspect="2.0"
+    isFullscreen="false"
+    windowTitle="Particle Editor"
+    devconsoleDefaultFont="Data/Fonts/MyFixedFont"
+    devconsoleFontAspect="1.0"
+    devconsoleTextHeight="25.0"
+    devconsoleMaxLines="30"
+    devconsoleMaxCommandHistory="128"
+    screenSizeWidth="1600.0"
+    screenSizeHeight="800.0"
+    enableJobSystem="true"
+    gpuParticlesStepUpdate="false"
+    maxCPUParticles="700000"
+    cpuParticlePools="10"
+/>

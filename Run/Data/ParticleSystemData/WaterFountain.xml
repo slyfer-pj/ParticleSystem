@@ -1,0 +1,28 @@
+<EmitterData>
+    <Base maxParticles="200000" emissionRate="5000" lifetime="1.00~3.00" speed="2.00~2.00" size="0.50~0.50" rotation="0.00~0.00" startColor="255,255,255,255" gravity="1"/>
+    <Shape shape="Cone" coneHalfAngle="80" sphereRadius="5"/>
+    <SizeOverLifetime>
+        <key value="1" time="0"/>
+        <key value="1" time="1"/>
+    </SizeOverLifetime>
+    <VelocityOverLifetime modifier="0">
+        <VelocityX>
+            <key value="0" time="0"/>
+            <key value="0" time="1"/>
+        </VelocityX>
+        <VelocityY>
+            <key value="0" time="0"/>
+            <key value="0" time="1"/>
+        </VelocityY>
+        <VelocityZ>
+            <key value="1" time="0"/>
+            <key value="0" time="1"/>
+        </VelocityZ>
+    </VelocityOverLifetime>
+    <ColorOverLifetime>
+        <key value="0,215,255,255" time="0"/>
+        <key value="120,97,210,255" time="1"/>
+    </ColorOverLifetime>
+    <Physics/>
+    <Renderer texture="" isSpriteSheet="false" dimensions="8,8" blend="Opaque" sortParticles="false"/>
+</EmitterData>
